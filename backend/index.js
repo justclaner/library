@@ -5,7 +5,7 @@ import bookRoute from './routes/book.js';
 import cors from 'cors';
 
 const app = express();
-app.use('/books',bookRoute);
+//app.use('/books',bookRoute);
 //middleware for parsing json
 app.use(express.json());
 
@@ -23,7 +23,7 @@ app.get('/',async (req,res)=>{
 mongoose.connect(mongoUrl)
 .then(()=>{
 console.log("Database connection succeeded");
-app.listen('https://library-server-22fb20411-justin-zous-projects.vercel.app/',()=>{
+app.listen(5000,()=>{
     console.log(`Listening on port ${PORT}`);
 })
 })
