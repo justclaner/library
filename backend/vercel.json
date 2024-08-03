@@ -7,12 +7,7 @@
       }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/books"
-      }
-    ],
-    "rewrites":  [
-      {"source": "/(.*)", "destination": "/books"}
+      { "src": "/(.*)","dest": "/"},
+      { "src":"/books", "dest":"/"}
     ]
   }
