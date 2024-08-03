@@ -1,7 +1,6 @@
 import express from 'express';
 import {PORT, mongoUrl} from './config.js';
 import mongoose from 'mongoose';
-import {Book} from './models/bookModels.js';
 import bookRoute from './routes/book.js';
 import cors from 'cors';
 
@@ -30,4 +29,4 @@ app.listen('https://library-server-22fb20411-justin-zous-projects.vercel.app/',(
 })
 .catch((error)=>{
 console.error(error);
-})
+});
