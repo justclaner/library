@@ -15,8 +15,8 @@ app.use(cors());
 
 
 app.get('/',async (req,res)=>{
-    const book = await Book.findOne({title: "The Time Ships"});
-    console.log(book);
+    // const book = await Book.findOne({title: "The Time Ships"});
+    // console.log(book);
     return res.status(200).send("Hello World");
 
 });
