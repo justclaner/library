@@ -30,3 +30,5 @@ app.listen(5000,()=>{
 .catch((error)=>{
 console.error(error);
 });
+
+export default app;
