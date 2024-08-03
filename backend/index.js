@@ -5,7 +5,7 @@ import bookRoute from './routes/book.js';
 import cors from 'cors';
 
 const app = express();
-//app.use('/books',bookRoute);
+app.use('/books',bookRoute);
 //middleware for parsing json
 app.use(express.json());
 
