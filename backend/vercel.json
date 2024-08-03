@@ -7,10 +7,10 @@
         "use": "@vercel/node"
       }
     ],
-    "routes": [
-      { "src": "/(.*)","dest": "/"},
-      { "src":"/books", "dest":"/"}
-    ],
+    // "routes": [
+    //   { "src": "/(.*)","dest": "/"},
+    //   { "src":"/books", "dest":"/"}
+    // ],
     "redirects": [
       {"source":"/", "destination":"/books"}
     ]
