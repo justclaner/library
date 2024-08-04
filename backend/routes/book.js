@@ -5,7 +5,12 @@ import {Book} from '../models/bookModels.js';
 import cors from 'cors';
 
 router.use(express.json());
-router.use(cors());
+router.use(cors({
+    origin: '*',
+    methods: '*',
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+  }));
 
 
 //get all books or specific book by id

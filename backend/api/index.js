@@ -10,7 +10,12 @@ app.use('/books',bookRoute);
 app.use(express.json());
 
 //middleware for handling CORS Policy
-app.use(cors());
+app.use(cors({
+    origin: '*',
+    methods: '*',
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+  }));
 
 
 // app.get('/',async (req,res)=>{
