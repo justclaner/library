@@ -12,7 +12,7 @@ app.use(express.json());
 app.use([auth]);
 app.use((req, res, next) => {
     res.set('Access-Control-Allow-Credentials', true)
-    res.set('Access-Control-Allow-Origin', 'http://127.0.0.1:5500/')
+    res.set('Access-Control-Allow-Origin', 'https://library-client-alpha.vercel.app')
     // another common pattern
     // res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
     res.set('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT')

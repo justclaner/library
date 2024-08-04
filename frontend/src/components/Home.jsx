@@ -16,7 +16,7 @@ const Home = () => {
     async function fetchBooks() {
         try {
         setLoading(true);
-        const response = await axios.get('https://library-server-4mt9dhqmn-justin-zous-projects.vercel.app/books');
+        const response = await axios.get('https://library-server-2ako2k1d5-justin-zous-projects.vercel.app/books');
         console.log(response);
         setBooks(response.data.data);
         setLoading(false);
