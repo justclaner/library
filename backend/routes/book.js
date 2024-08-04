@@ -3,6 +3,7 @@ const router = express.Router();
 import mongoose from 'mongoose';
 import {Book} from '../models/bookModels.js';
 import cors from 'cors';
+import auth from '../auth.js';
 
 router.use(express.json());
 router.use(cors({
@@ -11,7 +12,7 @@ router.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
   }));
-
+router.use([auth]);
 
 //get all books or specific book by id
 router.get('/:id?', async (req,res)=> {
