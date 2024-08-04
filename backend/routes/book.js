@@ -1,6 +1,5 @@
 import express from 'express';
 const router = express.Router();
-import mongoose from 'mongoose';
 import {Book} from '../models/bookModels.js';
 import cors from 'cors';
 import auth from '../auth.js';
