@@ -17,7 +17,7 @@ const DeleteBook = () => {
         const getBook = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get(`http://localhost:5000/books/${id}`);
+                const response = await axios.get(`https://library-server-4mt9dhqmn-justin-zous-projects.vercel.app/books/${id}`);
 
                 setTitle(response.data.data.title);
                 setAuthor(response.data.data.author);

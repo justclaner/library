@@ -13,7 +13,7 @@ const ShowBook = () => {
         async function fetchBook() {
             try {
             setLoading(true);
-            const response = await axios.get(`http://localhost:5000/books/${id}`)
+            const response = await axios.get(`https://library-server-4mt9dhqmn-justin-zous-projects.vercel.app/books/${id}`)
             setBook(response.data.data);
             setLoading(false);
             } catch(e) {

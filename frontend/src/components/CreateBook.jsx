@@ -21,7 +21,7 @@ const CreateBook = () => {
             publishYear: publishYear
         }
         setLoading(true);
-        const response = await axios.post("http://localhost:5000/books",data);
+        const response = await axios.post("https://library-server-4mt9dhqmn-justin-zous-projects.vercel.app/books",data);
         setLoading(false);
         enqueueSnackbar('Book created successfully', {variant: 'success'});
         navigate('/');
