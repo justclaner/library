@@ -1,6 +1,6 @@
 const allowCors = (req, res, next) => {
     res.header('Access-Control-Allow-Credentials', true)
-    res.header('Access-Control-Allow-Origin', '/library-client-eight.vercel.app')
+    res.header('Access-Control-Allow-Origin', '*')
     // another common pattern
     // res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
     res.header('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT')
