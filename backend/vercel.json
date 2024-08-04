@@ -13,7 +13,7 @@
     ],
     "headers": [
       {
-        "source": "/https://library-client-alpha.vercel.app",
+        "source": "/api/(.*)",
         "headers": [
           { "key": "Access-Control-Allow-Origin", "value": "https://library-client-bo3ic8461-justin-zous-projects.vercel.app" },
           { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
