@@ -18,7 +18,7 @@ const EditBook = () => {
         try {
         const getBook = async () => {
             setLoading(true);
-            const response = await axios.get(`https://library-server-2ako2k1d5-justin-zous-projects.vercel.app/books/${id}`);
+            const response = await axios.get(`https://library-server-sable.vercel.app/books/${id}`);
             setTitle(response.data.data.title);
             setAuthor(response.data.data.author);
             setPublishYear(response.data.data.publishYear);
@@ -40,7 +40,7 @@ const EditBook = () => {
             publishYear: publishYear
         }
         setLoading(true);
-        const response = await axios.put(`https://library-server-2ako2k1d5-justin-zous-projects.vercel.app/books/${id}`,data);
+        const response = await axios.put(`https://library-server-sable.vercel.app/books/${id}`,data);
         enqueueSnackbar('Book edited successfully', {variant: 'success'});
         setLoading(false);
         navigate('/');
