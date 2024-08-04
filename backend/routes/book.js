@@ -36,6 +36,7 @@ router.get('/:id?', async (req,res)=> {
         const {id} = req.params;
         
         const books = (id) ? await Book.findById(id) : await Book.find({});
+        console.log(res);
         return res.status(200).json({
             count: books.length,
             data: books,
