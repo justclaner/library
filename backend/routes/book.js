@@ -9,7 +9,7 @@ router.use(express.json());
 router.use(cors({
     origin: '*',
     methods: '*',
-    allowedHeaders: ['Content-Type', 'Authorization'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
     credentials: true,
   }));
 router.use([auth]);
