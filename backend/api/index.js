@@ -8,14 +8,14 @@ import auth from '../auth.js';
 const app = express();
 app.use('/books',bookRoute);
 
-app.use(express.json());
+// app.use(express.json());
 // app.use(cors({
 //     origin: '*',
 //     methods: '*',
 //     allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
 //     credentials: true,
 //   }));
-app.use([auth]);
+// app.use([auth]);
 
 //middleware for parsing json
 //app.use(express.json());

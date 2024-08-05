@@ -11,7 +11,7 @@ import auth from '../auth.js';
 //     allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
 //     credentials: true,
 //   }));
-// router.use([auth]);
+router.use([auth]);
 
 // router.use((req, res, next) => {
 //     res.set('Access-Control-Allow-Credentials', true)
