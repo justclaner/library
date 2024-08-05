@@ -4,14 +4,15 @@ import {Book} from '../models/bookModels.js';
 import cors from 'cors';
 import auth from '../auth.js';
 
-router.use(express.json());
-router.use(cors({
-    origin: '*',
-    methods: '*',
-    allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
-    credentials: true,
-  }));
-router.use([auth]);
+// router.use(express.json());
+// router.use(cors({
+//     origin: '*',
+//     methods: '*',
+//     allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
+//     credentials: true,
+//   }));
+// router.use([auth]);
+
 // router.use((req, res, next) => {
 //     res.set('Access-Control-Allow-Credentials', true)
 //     res.set('Access-Control-Allow-Origin', 'https://library-client-bo3ic8461-justin-zous-projects.vercel.app')
