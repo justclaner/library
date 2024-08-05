@@ -15,7 +15,7 @@ app.use(express.json());
 //     allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
 //     credentials: true,
 //   }));
-//app.use([auth]);
+app.use([auth]);
 
 //middleware for parsing json
 //app.use(express.json());
